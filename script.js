@@ -22,7 +22,6 @@ if (contactForm) {
     const field = event.target;
     if (field.validity.valueMissing) {
       field.setCustomValidity('Devi compilare tutti quanti i campi.');
-      document.querySelector('#form-status').textContent = 'Devi compilare tutti quanti i campi.';
     }
   }, true);
   contactForm.addEventListener('input', event => {
