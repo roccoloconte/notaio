@@ -54,3 +54,6 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
  .hero-art{min-height:220px;height:clamp(220px,30vh,300px)}.hero-copy{padding:32px 7% 40px}.hero h1{margin-bottom:12px}.hero-text{margin-bottom:0}.hero-actions{margin-top:22px}
  .footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 0}.footer-grid>div:first-child{grid-column:1;grid-row:1}.footer-grid>div:nth-child(2){grid-column:2;grid-row:2;text-align:right}.footer-grid>div:nth-child(3){grid-column:1;grid-row:3;text-align:left}.footer-grid>div:nth-child(4){grid-column:2;grid-row:4;text-align:right}.footer-bottom{margin-top:30px}
 }
+
+@media(min-width:751px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr auto;column-gap:clamp(35px,5vw,90px)}.footer-grid>div:last-child{justify-self:end}}
+@media(max-width:750px){.hero-art{height:clamp(300px,40vh,400px);min-height:300px}.studio-layout{gap:4px}.gallery-controls{padding-bottom:5px}.studio-details h3:first-child{margin-top:0}.studio-details a{margin-bottom:45px}}

@@ -17,6 +17,19 @@ if (year) year.textContent = new Date().getFullYear();
 // Inserire l'indirizzo email verificato dello studio per attivare il modulo.
 const studioEmail = "";
 const contactForm = document.querySelector('#contact-form');
+if (contactForm) {
+  contactForm.addEventListener('invalid', event => {
+    const field = event.target;
+    if (field.validity.valueMissing) {
+      field.setCustomValidity('Devi compilare tutti quanti i campi.');
+      document.querySelector('#form-status').textContent = 'Devi compilare tutti quanti i campi.';
+    }
+  }, true);
+  contactForm.addEventListener('input', event => {
+    event.target.setCustomValidity('');
+    document.querySelector('#form-status').textContent = '';
+  });
+}
 if (contactForm) contactForm.addEventListener('submit', event => {
   event.preventDefault();
   const status = document.querySelector('#form-status');
