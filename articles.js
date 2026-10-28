@@ -84,6 +84,12 @@ window.ARTICLES = [
     "url": "articoli/esempio-21.html"
   },
   {
+    "title": "Titolo articolo 22",
+    "date": "2026-01-22",
+    "description": "Breve introduzione all’articolo.",
+    "url": "articoli/esempio-22.html"
+  },
+  {
     "title": "Titolo articolo 3",
     "date": "2026-01-03",
     "description": "Breve introduzione all’articolo.",

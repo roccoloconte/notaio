@@ -22,3 +22,5 @@ body{color:var(--ink)} .header nav{font-size:15px;font-weight:700;gap:32px}.hero
 body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content:flex-end}.button-outline{background:#fff;color:#4b365f;border:1px solid #4b365f!important}.hero-actions .button:not(.button-outline){border:1px solid #4b365f!important}
 
 .gallery-main.dark-placeholder,.gallery-full-photo.dark-placeholder{background:#17121a;color:#fff}
+
+.page-intro{padding-top:38px;padding-bottom:30px}.page-intro + .section{padding-top:40px}.blog-pagination button{color:#4b365f}.blog-pagination button[aria-current="page"]{color:white}.article-content{border-top:1px solid var(--line);margin-top:40px;padding-top:1px}
