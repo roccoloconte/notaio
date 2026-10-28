@@ -23,7 +23,7 @@ if (contactForm) contactForm.addEventListener('submit', event => {
   if (!studioEmail) { status.textContent = 'Il modulo sarà attivo quando verrà inserito l’indirizzo email dello studio.'; return; }
   const data = new FormData(contactForm);
   const subject = encodeURIComponent(data.get('oggetto'));
-  const body = encodeURIComponent('Nome: ' + data.get('nome') + '\nEmail: ' + data.get('email') + '\n\n' + data.get('messaggio'));
+  const body = encodeURIComponent('Nome: ' + data.get('nome') + '\nCognome: ' + data.get('cognome') + '\nEmail: ' + data.get('email') + '\n\n' + data.get('messaggio'));
   window.location.href = 'mailto:' + studioEmail + '?subject=' + subject + '&body=' + body;
   status.textContent = 'Completa e invia il messaggio nella tua applicazione email.';
 });
