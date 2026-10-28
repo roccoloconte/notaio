@@ -1,7 +1,16 @@
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('#nav');
-menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
-nav.addEventListener('click', event => { if (event.target.closest('a')) { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); } });
+function setMenu(open) {
+  nav.classList.toggle('open', open);
+  menu.setAttribute('aria-expanded', String(open));
+  menu.setAttribute('aria-label', open ? 'Chiudi menu' : 'Apri menu');
+  document.body.classList.toggle('menu-open', open);
+}
+menu.setAttribute('aria-label', 'Apri menu');
+menu.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+nav.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+document.addEventListener('keydown', event => { if (event.key === 'Escape' && nav.classList.contains('open')) { setMenu(false); menu.focus(); } });
+window.matchMedia('(min-width: 751px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
