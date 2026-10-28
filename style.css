@@ -27,3 +27,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 
 /* Full-width article divider and separate gallery close control */
 .article-content{border-top:0;position:relative}.article-content::before{content:"";display:block;position:relative;width:100vw;left:-9vw;border-top:1px solid var(--line)}.gallery-dialog{padding:60px 30px 30px}.gallery-close{top:10px;right:18px;width:44px;height:44px;display:grid;place-items:center;z-index:1}.gallery-full-photo{height:calc(100% - 58px)}
+
+.home-services .section-heading h2{font-weight:400;letter-spacing:-.045em}
