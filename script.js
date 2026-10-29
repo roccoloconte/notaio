@@ -14,8 +14,7 @@ window.matchMedia('(min-width: 751px)').addEventListener('change', event => { if
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
-// Inserire l'indirizzo email verificato dello studio per attivare il modulo.
-const studioEmail = "";
+const studioEmail = "ccasale@notariato.it";
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
   contactForm.addEventListener('invalid', event => {
@@ -35,7 +34,7 @@ if (contactForm) contactForm.addEventListener('submit', event => {
   if (!studioEmail) { status.textContent = 'Il modulo sarà attivo quando verrà inserito l’indirizzo email dello studio.'; return; }
   const data = new FormData(contactForm);
   const subject = encodeURIComponent(data.get('oggetto'));
-  const body = encodeURIComponent('Nome: ' + data.get('nome') + '\nCognome: ' + data.get('cognome') + '\nEmail: ' + data.get('email') + '\n\n' + data.get('messaggio'));
+  const body = encodeURIComponent('Messaggio inviato dal sito web dello studio.\n\nNome: ' + data.get('nome') + '\nCognome: ' + data.get('cognome') + '\nEmail: ' + data.get('email') + '\n\n' + data.get('messaggio'));
   window.location.href = 'mailto:' + studioEmail + '?subject=' + subject + '&body=' + body;
   status.textContent = 'Completa e invia il messaggio nella tua applicazione email.';
 });
@@ -73,3 +72,7 @@ if (blogRoot && Array.isArray(window.ARTICLES)) {
   if(nav) { nav.replaceChildren(); const count=Math.ceil(articles.length/perPage); for(let i=1;i<=count;i++){ const button=document.createElement('button'); button.type='button';button.textContent=i;if(i===page)button.setAttribute('aria-current','page');button.addEventListener('click',()=>{page=i;render();blogRoot.scrollIntoView({behavior:'smooth'});});nav.append(button); } }
  } render();
 }
+
+document.querySelectorAll('.map-load').forEach(button => button.addEventListener('click', () => {
+ const frame=document.createElement('iframe'); frame.title='Mappa Google: studio di '+button.dataset.city; frame.loading='lazy'; frame.referrerPolicy='strict-origin-when-cross-origin'; frame.src='https://maps.google.com/maps?q='+button.dataset.map+'&output=embed'; button.replaceWith(frame);
+}));
