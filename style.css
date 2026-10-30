@@ -81,3 +81,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 @media(max-width:750px){.contact-layout>div:nth-child(2)::before{width:116.279%;left:-8.1395%}}
 
 .monogram-m{font-size:.68em;vertical-align:baseline}
+
+.brand-symbol{width:72px;height:60px;object-fit:contain;filter:grayscale(1) invert(1);mix-blend-mode:screen;flex:none}.street-address{white-space:nowrap}@media(max-width:750px){.brand-symbol{width:62px;height:52px}.brand{gap:8px}}
