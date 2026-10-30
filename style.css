@@ -64,3 +64,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 .header,.site-footer{background:#382a48;color:#fff}.header .brand,.header .monogram,.header .menu{color:#fff}.site-footer .footer-logo,.site-footer .footer-logo .monogram,.site-footer .footer-grid h2,.site-footer .footer-grid a{color:#fff}.site-footer .footer-grid p,.site-footer .footer-bottom{color:#ddd1e3}.contact-location h3{margin-bottom:8px}.contact-location>p:first-of-type{margin-top:0}@media(max-width:750px){.header nav,.header nav.open{background:#382a48;color:#fff}}
 
 .header .brand strong,.header nav a,.site-footer strong,.site-footer h2,.site-footer a{font-weight:400}
+
+@media(min-width:751px){.footer-grid{grid-template-columns:1.4fr 1fr auto}.footer-grid>div:last-child{justify-self:end}}
