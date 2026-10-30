@@ -79,3 +79,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 @media(max-width:750px){.contact-layout{grid-template-columns:minmax(0,1fr)}.contact-layout>div,.contact-layout form,.contact-location,.map-container{min-width:0;max-width:100%}.map-container iframe{display:block;width:100%;max-width:100%}.studio-details a{margin-bottom:0}.studio-gallery{margin-top:25px}.studio-gallery::before{margin-bottom:35px}}
 
 @media(max-width:750px){.contact-layout>div:nth-child(2)::before{width:116.279%;left:-8.1395%}}
+
+.monogram-m{font-size:.68em;vertical-align:baseline}
