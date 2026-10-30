@@ -14,7 +14,7 @@ window.matchMedia('(min-width: 751px)').addEventListener('change', event => { if
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
-const studioEmail = "ccasale@notariato.it";
+
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
   contactForm.addEventListener('invalid', event => {
@@ -30,14 +30,10 @@ if (contactForm) {
 }
 if (contactForm) contactForm.addEventListener('submit', event => {
   event.preventDefault();
-  const status = document.querySelector('#form-status');
-  if (!studioEmail) { status.textContent = 'Il modulo sarà attivo quando verrà inserito l’indirizzo email dello studio.'; return; }
-  const data = new FormData(contactForm);
-  const subject = encodeURIComponent(data.get('oggetto'));
-  const body = encodeURIComponent('Messaggio inviato dal sito web dello studio.\n\nNome: ' + data.get('nome') + '\nCognome: ' + data.get('cognome') + '\nEmail: ' + data.get('email') + '\n\n' + data.get('messaggio'));
-  window.location.href = 'mailto:' + studioEmail + '?subject=' + subject + '&body=' + body;
-  status.textContent = 'Completa e invia il messaggio nella tua applicazione email.';
+  // Invio diretto da collegare a un servizio autenticato della casella dello studio.
+  document.querySelector('#form-status').textContent = 'Invio temporaneamente non disponibile. Contatta lo studio telefonicamente.';
 });
+
 
 const gallery = document.querySelector('[data-gallery]');
 const dialog = document.querySelector('.gallery-dialog');
