@@ -75,3 +75,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 @media(max-width:750px){.contact-layout>div:nth-child(2){position:relative}.contact-layout>div:nth-child(2)::before{content:"";display:block;position:relative;width:100vw;left:-7vw;border-top:1px solid var(--line);margin-bottom:45px}.studio-gallery::before{left:-7vw}.studio-details h3:first-child{margin-top:24px}}
 
 .contact-location:first-of-type{border-top:0}
+
+@media(max-width:750px){.contact-layout{grid-template-columns:minmax(0,1fr)}.contact-layout>div,.contact-layout form,.contact-location,.map-container{min-width:0;max-width:100%}.map-container iframe{display:block;width:100%;max-width:100%}.studio-details a{margin-bottom:0}.studio-gallery{margin-top:25px}.studio-gallery::before{margin-bottom:35px}}
