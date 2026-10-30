@@ -68,3 +68,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 @media(min-width:751px){.footer-grid{grid-template-columns:1.4fr 1fr auto}.footer-grid>div:last-child{justify-self:end}}
 
 @media(min-width:751px){.footer-grid{grid-template-columns:max-content max-content max-content;justify-content:start;column-gap:clamp(35px,5vw,72px)}.footer-grid>div:last-child{justify-self:start}}
+
+.home-blog{border-top:1px solid var(--line)}
