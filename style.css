@@ -70,3 +70,6 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 @media(min-width:751px){.footer-grid{grid-template-columns:max-content max-content max-content;justify-content:start;column-gap:clamp(35px,5vw,72px)}.footer-grid>div:last-child{justify-self:start}}
 
 .home-blog{border-top:1px solid var(--line)}
+
+.studio-gallery{position:relative}.studio-gallery::before{content:"";display:block;position:relative;width:100vw;left:-9vw;border-top:1px solid var(--line);margin-bottom:55px}
+@media(max-width:750px){.contact-layout>div:nth-child(2){position:relative}.contact-layout>div:nth-child(2)::before{content:"";display:block;position:relative;width:100vw;left:-7vw;border-top:1px solid var(--line);margin-bottom:45px}.studio-gallery::before{left:-7vw}.studio-details h3:first-child{margin-top:24px}}
