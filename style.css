@@ -87,3 +87,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 .contact-layout select{width:100%;font:16px Georgia,serif;border:1px solid #cfc5d7;border-radius:4px;padding:14px;background:#fff;color:#352744}.contact-layout form .privacy-consent{display:flex;align-items:flex-start;gap:10px;font-weight:400;line-height:1.5;margin:15px 0}.contact-layout form .privacy-consent input{width:auto;flex:none;margin:3px 0 0}.privacy-consent a{text-decoration:underline}
 
 @media(max-width:750px){.header{align-items:center}.header .menu{align-self:center;display:flex;align-items:center;justify-content:center}.header .menu span{display:block;line-height:1;transform:translateY(-2px)}.header .brand strong{font-size:12px}.hero-copy h1{font-size:clamp(34px,9.2vw,42px)}}
+
+@media(max-width:750px){.footer-grid>div:first-child{grid-column:1 / -1}.footer-logo strong{white-space:nowrap}}
