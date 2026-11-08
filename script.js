@@ -38,8 +38,8 @@ if (contactForm) contactForm.addEventListener('submit', event => {
 const gallery = document.querySelector('[data-gallery]');
 const dialog = document.querySelector('.gallery-dialog');
 if (gallery && dialog) {
-  let current = 0; const total = 3;
-  const update = () => { gallery.querySelector('[data-count]').textContent = `${current + 1} / ${total}`; dialog.querySelector('[data-full-count]').textContent = `${current + 1} / ${total}`; gallery.querySelector('.gallery-main').classList.toggle('dark-placeholder', current === 1); dialog.querySelector('.gallery-full-photo').classList.toggle('dark-placeholder', current === 1); };
+  let current = 0; const photos = gallery.dataset.photos.split(','); const total = photos.length;
+  const update = () => { gallery.querySelector('[data-count]').textContent = `${current + 1} / ${total}`; dialog.querySelector('[data-full-count]').textContent = `${current + 1} / ${total}`; gallery.querySelector('.gallery-main img').src = photos[current]; dialog.querySelector('.gallery-full-photo img').src = photos[current]; };
   const change = n => { current = (current + n + total) % total; update(); };
   gallery.querySelector('[data-prev]').addEventListener('click', () => change(-1));
   gallery.querySelector('[data-next]').addEventListener('click', () => change(1));
