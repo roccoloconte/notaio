@@ -100,3 +100,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 
 /* Foto centrate nelle rispettive cornici. */
 .hero-art img{object-position:center}.location-visual img.slide{object-fit:contain;object-position:center;background:#f6f3f8}.gallery-main{position:relative;display:block}.gallery-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;background:#f6f3f8}.gallery-full-photo img{object-position:center}
+
+.hero-art img,.location-visual img.slide,.gallery-main img{object-fit:cover;object-position:center}
