@@ -106,3 +106,5 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 .gallery-dialog .gallery-full-photo{position:relative;min-width:0;min-height:0;overflow:hidden}.gallery-dialog .gallery-full-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center}
 
 .location-visual{height:350px}.gallery-main{height:500px}.team-photo{min-height:480px}@media(max-width:750px){.location-visual{height:300px}.gallery-main{height:360px}.team-photo{min-height:330px}}
+
+.gallery-credit{margin:14px 0 4px;text-align:center;color:var(--muted);font-size:13px;line-height:1.5}.studio-gallery-view>.gallery-controls{padding-top:12px}
