@@ -72,3 +72,10 @@ if (blogRoot && Array.isArray(window.ARTICLES)) {
 document.querySelectorAll('.map-load').forEach(button => button.addEventListener('click', () => {
  const frame=document.createElement('iframe'); frame.title='Mappa Google: studio di '+button.dataset.city; frame.loading='lazy'; frame.referrerPolicy='strict-origin-when-cross-origin'; frame.src='https://maps.google.com/maps?q='+button.dataset.map+'&output=embed'; button.replaceWith(frame);
 }));
+
+const heroPhotoButton = document.querySelector(".hero-photo-button");
+const heroPhotoDialog = document.querySelector(".hero-photo-dialog");
+if (heroPhotoButton && heroPhotoDialog) {
+  heroPhotoButton.addEventListener("click", () => heroPhotoDialog.showModal());
+  heroPhotoDialog.querySelector(".hero-photo-close").addEventListener("click", () => heroPhotoDialog.close());
+}
