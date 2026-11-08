@@ -97,3 +97,6 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 
 @keyframes slide-show-two{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}.slideshow.two-slides .slide{animation-name:slide-show-two}
 @media(prefers-reduced-motion:reduce){.slideshow.two-slides .slide{animation:none;opacity:0}.slideshow.two-slides .slide:first-child{opacity:1}}
+
+/* Foto centrate nelle rispettive cornici. */
+.hero-art img{object-position:center}.location-visual img.slide{object-fit:contain;object-position:center;background:#f6f3f8}.gallery-main{position:relative;display:block}.gallery-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;background:#f6f3f8}.gallery-full-photo img{object-position:center}
