@@ -114,3 +114,8 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 .location-visual img[src$="avellino-2.jpg"]{object-position:center bottom}.location-visual img[src$="avellino-3.jpg"]{object-position:left center}
 
 .brand-symbol{filter:brightness(0) invert(1);mix-blend-mode:normal}@media(min-width:751px){.header nav{font-size:16px;gap:clamp(10px,1.5vw,24px)}}
+
+/* Logo completo: sigillo sopra il nome e la qualifica. */
+.brand{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:0;text-align:center;line-height:1.15}.brand-symbol{width:49px;height:49px}.brand .brand-name{display:block;white-space:nowrap}.brand .brand-role{display:flex;align-items:center;justify-content:center;gap:7px;font-size:8px;letter-spacing:.22em;margin-top:3px}.brand .brand-role:before,.brand .brand-role:after{content:"";width:21px;height:1px;background:currentColor;display:block}.footer-logo .brand-role{letter-spacing:.1em}@media(max-width:750px){.header .brand-symbol{width:42px;height:42px}.header .brand strong{font-size:10px}.header .brand .brand-role{font-size:7px}.header .brand{gap:0}.footer-logo .brand-symbol{width:49px;height:49px}}
+
+.brand{width:max-content;max-width:100%}
