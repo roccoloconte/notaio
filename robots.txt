@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://notaio-5bz.pages.dev/sitemap.xml
