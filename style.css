@@ -125,4 +125,4 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 /* Altezza delle fotografie degli studi nella homepage. */
 .locations .location-visual{height:480px}@media(max-width:750px){.locations .location-visual{height:420px}}
 
-@media(max-width:750px){.hero{padding-top:14px}.hero-art{height:clamp(210px,34dvh,300px);min-height:0}.hero-copy{padding:16px 7% 24px}.hero h1{margin-bottom:10px}.hero-text{line-height:1.5}.hero-actions{margin-top:16px}}
+@media(max-width:750px){.hero{padding-top:14px}.hero-art{height:clamp(250px,calc(100dvh - 515px),390px);min-height:0}.hero-copy{padding:16px 7% 24px}.hero h1{margin-bottom:10px}.hero-text{line-height:1.5}.hero-actions{margin-top:16px}}
