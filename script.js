@@ -79,3 +79,13 @@ if (heroPhotoButton && heroPhotoDialog) {
   heroPhotoButton.addEventListener("click", () => heroPhotoDialog.showModal());
   heroPhotoDialog.querySelector(".hero-photo-close").addEventListener("click", () => heroPhotoDialog.close());
 }
+
+document.querySelectorAll(".map-choice").forEach(choice => {
+ const button = choice.querySelector(".map-consent");
+ button.addEventListener("click", () => {
+  const frame = document.createElement("iframe"); frame.title = choice.dataset.mapTitle; frame.loading = "lazy"; frame.referrerPolicy = "strict-origin-when-cross-origin"; frame.src = choice.dataset.mapSrc;
+  const hide = document.createElement("button"); hide.type = "button"; hide.className = "map-hide"; hide.textContent = "Nascondi la mappa";
+  button.hidden = true; choice.append(frame, hide);
+  hide.addEventListener("click", () => { frame.remove(); hide.remove(); button.hidden = false; button.focus(); });
+ });
+});
