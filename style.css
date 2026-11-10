@@ -121,3 +121,6 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 .brand{width:max-content;max-width:100%}
 
 .hero-art img{object-fit:contain;object-position:center;background:#f6f3f8}.location-visual{height:410px}.gallery-main{height:570px}.team-photo{min-height:540px}.map-choice p{font-size:14px;line-height:1.5}.map-consent,.map-hide{border:0;cursor:pointer}.map-hide{display:block;margin-top:10px;padding:8px 0;background:none;color:var(--ink);text-decoration:underline}@media(max-width:750px){.hero-art img{object-position:center}.location-visual{height:350px}.gallery-main{height:420px}.team-photo{min-height:390px}.footer-grid>div:first-child,.footer-grid>div:nth-child(2),.footer-grid>div:nth-child(3),.footer-grid>div:nth-child(4){grid-column:1 / -1;text-align:left}.footer-grid>div:nth-child(2){grid-row:2}.footer-grid>div:nth-child(3){grid-row:3}.footer-grid>div:nth-child(4){grid-row:4}.footer-bottom{text-align:left}}
+
+/* Altezza delle fotografie degli studi nella homepage. */
+.locations .location-visual{height:480px}@media(max-width:750px){.locations .location-visual{height:420px}}
