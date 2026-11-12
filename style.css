@@ -129,4 +129,4 @@ body,body *{font-family:Georgia,serif!important}.blog-pagination{justify-content
 
 @media(max-width:750px){.hero-art{flex:0 0 auto;height:clamp(250px,calc(100dvh - 400px),460px)}.hero-art img{object-fit:contain;object-position:center}}
 
-.team-photo{overflow:hidden}.team-photo img{display:block;width:100%;height:auto;max-height:100%;object-fit:contain}
+.team-photo{overflow:hidden;border:0}.team-photo img{display:block;width:100%;height:auto;max-height:100%;object-fit:contain}
